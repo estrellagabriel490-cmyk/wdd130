@@ -1,3 +1,38 @@
+/* Header & Navigation Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #004e64;
+}
+
+header img {
+    max-height: 70px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #25a18e;
+    color: #ffffff;
+}
+
+
+
 /* Hero Banner Positioning */
 .hero {
     position: relative;
@@ -74,4 +109,136 @@ th, td {
 th {
     background-color: #005f73;
     color: white;
+}
+
+
+
+.company-info h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+.employees {
+    margin-bottom: 3rem;
+}
+
+.employees h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.employee-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.employee-cards figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.employee-cards img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.employee-cards figcaption {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+.contact-form-section {
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.radio-group {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.radio-group legend {
+    font-weight: bold;
+    padding: 0 0.4rem;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.checkbox-item label {
+    font-weight: normal;
+}
+
+.submit-btn {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #003d80;
 }
